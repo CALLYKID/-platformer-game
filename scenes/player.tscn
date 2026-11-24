@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dtyhlubim28u6" path="res://assets/images/player/Idle (32x32).png" id="2_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://ugkhwwji68hg" path="res://assets/images/player/Jump (32x32).png" id="3_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://77nilae65fbn" path="res://assets/images/player/Run (32x32).png" id="4_fjrip"]
+[ext_resource type="AudioStream" uid="uid://c3yncheiwcaai" path="res://assets/sounds/jump.wav" id="6_tuyoq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
 atlas = ExtResource("1_dqkch")
@@ -259,3 +260,6 @@ flip_h = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=967021679]
 position = Vector2(0.6666666, 3.3333335)
 shape = SubResource("RectangleShape2D_jmpqu")
+
+[node name="jumpSound" type="AudioStreamPlayer2D" parent="." unique_id=1635347087]
+stream = ExtResource("6_tuyoq")

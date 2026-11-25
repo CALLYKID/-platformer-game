@@ -37,6 +37,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
+
 	move_and_slide()
 	if direction == 1.0:
 		animated_sprite_2d.flip_h = false
